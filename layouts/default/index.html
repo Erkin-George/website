@@ -1,0 +1,40 @@
+{{ define "main" }}
+<nav class="sidebar-nav">
+  {{ $currentPage := . }}
+  {{ range .Site.Menus.main }}
+  <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+  {{ end }}
+</nav>
+  <div class="row">
+    <div class="col-md-8">
+      <main aria-role="main">
+        <header class="homepage-header">
+          <h1>{{.Title}}</h1>
+          {{ with .Params.subtitle }}
+            <span class="subtitle">{{.}}</span>
+          {{ end }}
+        </header>
+        <div class="homepage-content">
+          {{.Content}}
+        </div>
+        <div>
+          {{ range first 10 .Site.RegularPages }}
+            {{ .Render "summary"}}
+          {{ end }}
+        </div>
+      </main>
+    </div>
+    <div class="col-md-4">
+      <aside>
+        <ul>
+          {{ range .Site.RegularPages }}
+            {{ $dir := split .File.Dir "/" }}
+            {{ if or (eq (index $dir 0) "about") (eq (index $dir 0) "contact") }}
+              <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </aside>
+    </div>
+  </div>
+{{ end }}
