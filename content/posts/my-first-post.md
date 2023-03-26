@@ -5,6 +5,4 @@ draft: false
 ---
 ## Introduction
 
-This is **bold** text, and this is *emphasized* text.
-
-Visit the [Hugo](https://gohugo.io) website!
+This is my first test post on this website. I plan to post more as time passes and I learn more about hosting and building a website.

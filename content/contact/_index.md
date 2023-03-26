@@ -7,8 +7,7 @@ date: 2023-03-17T12:00:00Z
 
 You can reach me at the following:
 
-- Email: your-email@example.com
-- Phone: +1234567890
-- Twitter: [@yourhandle](https://twitter.com/yourhandle)
+[erkin.george@gmail.com](mailto:erkin.george@gmail.com)  
+[My LinkedIn Profile](https://www.linkedin.com/in/erkin-george/)
 
-<!-- Add more contact information here -->
+
