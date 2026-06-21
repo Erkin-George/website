@@ -1,6 +1,20 @@
 import { getAllPosts, getPost } from '@/lib/posts'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import NextImage from 'next/image'
 import { notFound } from 'next/navigation'
+
+const mdxComponents = {
+  img: ({ src, alt }: { src?: string; alt?: string }) => (
+    <NextImage
+      src={src || ''}
+      alt={alt || ''}
+      width={0}
+      height={0}
+      sizes="100vw"
+      className="w-full h-auto rounded-lg"
+    />
+  ),
+}
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -40,7 +54,7 @@ export default async function BlogPost({ params }: Props) {
         </time>
       </header>
       <div className="prose dark:prose-invert max-w-none">
-        <MDXRemote source={post.content} />
+        <MDXRemote source={post.content} components={mdxComponents} />
       </div>
     </article>
   )
