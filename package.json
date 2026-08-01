@@ -10,6 +10,7 @@
     "new-post": "node scripts/new-post.mjs"
   },
   "dependencies": {
+    "googleapis": "^173.0.0",
     "gray-matter": "^4.0.3",
     "next": "^15.3.3",
     "next-mdx-remote": "^6.0.0",
