@@ -10,13 +10,15 @@ Some things in life just make a house feel like a home. For me, that thing is a 
 
 ## How We Met
 
-[Tell the story of how you got Rascal here.]
+{/* WRITE: You got him from someone you knew — who was it, and how did it come about? What was he like when he first arrived? */}
 
 ## What Rascal Gets Up To
 
 As you can see from the photo above, Rascal takes relaxation very seriously. He has claimed the top perch of his cat tree as his personal throne, and will stare you down from it with the quiet authority of someone who knows they're in charge.
 
-[Add more personality details here.]
+{/* WRITE: The affectionate/clingy side — how does he follow you around, demand attention? And the "playful and evil" side — a favorite mischief story or two. Land on the "but still a good cat" note. */}
+{/* Tip: drop in another photo anywhere with:  ![alt text](/images/posts/rascal/rascal-2.jpg)  after adding the file to public/images/posts/rascal/ */}
+
 
 ## Why I'm Posting This
 
